@@ -1,13 +1,120 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: #BDF1F6;
 }
+
+.navbar {
+  display: flex;
+  padding: 20px;
+  background: #8FBAF3;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1{
+  font-size: 25px;
+  font-weight: 600;
+}
+.navbar .links{
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .links a{
+  text-decoration: none;
+}
+
+.signup-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#F2FCFC;
+  height: 60vh;
+  width: 60vw;
+  border-radius: 20px;
+  margin: 100px auto;
+}
+
+.testimonial {
+  align-self: flex-start;
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 30px 30px 30px;
+  max-width: 40%;
+  line-height: 1.5;
+  font-size: 14px;
+
+}
+
+.divider{
+  border-left: 1.5px solid lightgray;
+  height: 250px;
+}
+.signup-form {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding: 2rem;
+}
+
+.signup-form h3 {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 25px 0;
+}
+
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  width: 100%;
+  background-color:#F2FCFC;
+}
+
+.signup-form .checkbox{
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input[type="checkbox"]{
+   transform: scale(0.8);
+}
+
+.checkbox span{
+  margin-left: 5px;
+}
+
+button{
+  background: #0245A3;
+  color: white;
+  width: 40%;
+  height: 30px;
+  align-self: center;
+  border-radius: 20px;
+  border: none;
+  font-size: 10px;
+}
+
+img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
